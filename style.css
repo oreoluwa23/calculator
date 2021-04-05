@@ -1,0 +1,111 @@
+/* general settings */
+body {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* display layout*/
+.container {
+  width: 40%;
+  margin: 0 auto;
+  border: rgb(21, 21, 22) solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sub-container {
+  display: flex;
+  width: 100%;
+
+  /* flex-direction: column; */
+}
+.main {
+  width: 75%;
+}
+.operators {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.operators:hover div,
+.operators:active {
+  cursor: pointer;
+}
+
+#plus,
+#minus,
+#multiply,
+#divide {
+  padding: 0.45em;
+  background-color: rgb(216, 216, 216);
+  width: 25%;
+  margin: 0 0.3em 0 0.3em;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.numbers:hover,
+.numbers:active {
+  cursor: pointer;
+  background-color: rgb(216, 216, 216);
+}
+
+.right-layout {
+  border: solid rgb(46, 9, 119) 1px;
+  background-color: yellow;
+  margin: 0.5em auto;
+  padding: 0.3em;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.right-layout:hover,
+.right-layout:active {
+  background-color: rgb(216, 216, 216);
+  cursor: pointer;
+}
+/* number-layout */
+
+.numbers-layout {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.numbers {
+  width: 25%;
+  padding: 1em;
+  border: black solid 1px;
+  text-align: center;
+  margin: 0.5em 0.4em;
+}
+/* display screen */
+#screen-display {
+  box-sizing: content-box;
+
+  width: 85%;
+  max-width: 70%;
+  height: 60px;
+  padding: 2em;
+  border: black 1px solid;
+  margin: 1em;
+}
+.previous-operand {
+  display: block;
+  margin-bottom: 1em;
+}
+.current-operand {
+  display: block;
+}
+.equals {
+  display: inline-block;
+}
+#clear {
+  width: 25%;
+  padding: 1em;
+  border: black solid 1px;
+  text-align: center;
+  margin: 0.5em 0.4em;
+}
